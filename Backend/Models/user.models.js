@@ -17,13 +17,9 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    targetPrice: {
-        type: Number,
-        required: true
-    },
     condition: {
         type: String,
-        enum: ['greater', 'less'],
+        enum: ['>', '<'],
         required: true
     }
 }, {
