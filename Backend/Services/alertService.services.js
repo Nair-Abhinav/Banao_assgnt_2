@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-const Alert = require('../models/Alert');
+const Alert = require('../Models/alert.models');
 
 const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,

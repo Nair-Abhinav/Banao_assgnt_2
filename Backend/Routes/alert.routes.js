@@ -1,5 +1,5 @@
 const express = require('express');
-const { fetchCryptoPrice } = require('../services/cryptoService');
+const { fetchCryptoPrice } = require('../Services/cryptoService.service');
 const router = express.Router();
 
 router.get('/price/:currency', async (req, res) => {

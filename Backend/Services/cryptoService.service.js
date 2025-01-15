@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { setCache, getCache } = require('./cacheService');
+const { setCache, getCache } = require('./cacheService.services');
 
 const fetchCryptoPrice = async (currency) => {
     const cachedPrice = await getCache(currency);

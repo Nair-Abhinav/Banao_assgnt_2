@@ -1,4 +1,4 @@
-const redisClient = require('../config/redis');
+const redisClient = require('../Config/redis.config');
 
 const setCache = (key, value, ttl = 60) => {
     redisClient.setex(key, ttl, JSON.stringify(value));
